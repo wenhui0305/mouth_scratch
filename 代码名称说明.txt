@@ -1,0 +1,8 @@
+Data set partitioning——数据集划分
+extract_frames——对视频进行帧提取
+label——将Excel表（抓绕行为）中的时间转换为对应的帧数
+label_1——将Excel表（非抓绕行为）中的时间转换为对应的帧数
+model-2D-CNN——使用2D-CNN模型训练
+model-3D-CNN——使用3D-CNN模型训练
+no_scratching——根据转换后的帧数Excel表自动划分非抓绕行为帧图像
+scratching——根据转换后的帧数Excel表自动划分抓绕行为帧图像

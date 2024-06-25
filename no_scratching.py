@@ -3,11 +3,11 @@ import pandas as pd
 import shutil
 
 # Excel文件路径
-excel_file = r'D:\码仓\香港泰康诺生物科技有限公司\mouth_scratch\label_no_grab_with_frames.xlsx'
+excel_file = r'D:\桌面\香港泰康诺生物科技有限公司\scratch\label_with_frames_no_scrach.xlsx'
 # 帧图像的文件夹路径
-frame_images_folder = r'D:\码仓\香港泰康诺生物科技有限公司\mouth_scratch\frame'
+frame_images_folder = r'D:\桌面\香港泰康诺生物科技有限公司\scratch\frame'
 # 目标文件夹路径，将帧图像复制到这里
-output_folder = r'D:\码仓\香港泰康诺生物科技有限公司\mouth_scratch\frames_no_scratch'
+output_folder = r'D:\桌面\香港泰康诺生物科技有限公司\scratch\frames_no_scratch'
 
 # 假设帧号的上限是36018
 max_frame_number = 36018
@@ -37,7 +37,7 @@ if not os.path.exists(output_folder):
 
 # 遍历未列出的帧号，并从文件系统中提取相应的帧图像
 for frame_number in frames_to_extract:
-    frame_filename = f"00_{frame_number}.jpg"
+    frame_filename = f"{frame_number}.jpg"
     frame_path = os.path.join(frame_images_folder, frame_filename)
     output_path = os.path.join(output_folder, frame_filename)
 
